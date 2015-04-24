@@ -1,5 +1,5 @@
 {
-  "name": "collect",
+  "name": "full-stack-app",
   "root": "dist",
   "clean_urls": false,
   "error_page": "error.html"
