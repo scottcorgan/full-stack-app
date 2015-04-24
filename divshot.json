@@ -1,0 +1,6 @@
+{
+  "name": "collect",
+  "root": "dist",
+  "clean_urls": false,
+  "error_page": "error.html"
+}
