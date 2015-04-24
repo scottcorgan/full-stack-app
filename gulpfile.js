@@ -4,6 +4,7 @@ var reactify = require('reactify');
 var babelify = require('babelify');
 var concat = require('gulp-concat');
 var superstatic = require('superstatic');
+var open = require('open');
 
 gulp.task('bundle-scripts', function () {
   
@@ -41,7 +42,12 @@ gulp.task('serve', ['default'], function () {
   
   var server = app.listen(function (err) {
     
-    console.log('Server started');
+    console.log('Client started on port', 3474);
+    
+    process.nextTick(function () {
+      
+      open('http://localhost:3474');
+    });
   });
 });
 
